@@ -4,17 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/Mascote/favicon-32x32.png">
     <title>Apraxia Kids</title>
-    <!-- icone -->
+    <!-- favicon da pagina -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <!-- Icone menu -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <!-- bootstraap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="stylePaginaInicial.css">k
+    <link rel="stylesheet" href="../tela inicio/telaincio.css">
+
+    <!-- fonte anton -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 
 
+ <!--  Fonte league Gothic -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Anton&family=Jersey+15&family=League+Gothic&display=swap" rel="stylesheet">
 </head>
+
+
 
 <body>
 
@@ -28,8 +37,10 @@
             <ul class="menu">
                 <li><a class="button" href="../assets/inicio.html">Inicio</a></li>
                 <li><a class="button" href="../assets/sobre.html">Sobre</a></li>
-                <li><a class="button" href="/assets/amigurumis.html">Crianças</a></li>
-                <li><a class="button" href="../assets/contato.html">Contato</a></li>
+                <li><a class="button" href="/assets/amigurumis.html">Fonoaudiólogas</a></li>
+                <li><a class="button" href="../assets/contato.html">Responsaveis</a></li>
+                <li><a class="button" href="../assets/contato.html">Crianças</a></li>
+
 
             </ul>
 
@@ -43,35 +54,36 @@
     <main>
         <article class="conteudo" aria-labelledby="label-introducao">
             <div class="introduce">
-                <h1 id="label-introducao">Apraxia da fala</h1>
+                <h1 id="label-introducao">O que é Apraxia da Fala?</h1>
                 <p>Distúrbio motor da fala que dificulta a fala das crianças.
                     geralmente têm uma boa
                     compreensão da linguagem e sabem o que querem dizer. No entanto, eles têm dificuldade em aprender ou
                     realizar
                     os movimentos sequenciais complexos que são necessários para uma fala inteligível </p>
-                <a class="botao" href="../assets/amigurumis.html">Ver mais sobre</a>
+                <a class="botao" href="../assets/amigurumis.html">Ver mais sobre Apraxia</a>
 
             </div>
             <div class="introducao-cover">
-                <img src="../images/MascoteApraxia.png" alt="Logo Atelie">
+                <img src="./images/MascoteApraxia.png" alt="Logo Mascote">
 
             </div>
         </article>
     </main>
 
-  
+
+
     <div class="Div_escolha">
         <div class="container_palavras">
             <h1 style="font-size: 37px;" class="Texto_Escolhas1">Fonoaudiólogas</h1>
             <p class="Texto_Escolhas2">Descubra uma nova maneira divertida de impulsionar suas terapias! </p>
-            <img src="../images/Fono-Inicio.png" alt="" width="100%" height="100%">
+            <img src="./images/Fono-Inicio.png" alt="" width="100%" height="100%">
             <a class="button-cadastro" href="fono.html">Cadastrar-se</a>
         </div>
 
         <div class="container_palavras">
             <h1 style="font-size: 37px;" class="Texto_Escolhas1">Crianças</h1>
             <p class="Texto_Escolhas2">Proporciona atividades personalizadas e orientadas por especialistas. </p>
-            <img src="../images/Crianca-Inicio.png" alt="" width="100%" height="100%">
+            <img src="./images/Crianca-Inicio.png" alt="" width="100%" height="100%">
             <a class="button-cadastro" href="fono.html">Cadastrar-se</a>
         </div>
 
@@ -79,30 +91,28 @@
             <h1 style="font-size: 37px;" class="Texto_Escolhas1">Responsáveis</h1>
             <p class="Texto_Escolhas2">Com orientação especializada, apoiamos você nessa jornada ao lado de seus entes
                 queridos. </p>
-            <img src="../images/Respo-Inicio.png" alt="" width="100%" height="100%">
+            <img src="./images/Respo-Inicio.png" alt="" width="100%" height="100%">
             <a class="button-cadastro" href="fono.html">Cadastrar-se</a>
         </div>
     </div>
 
-    <p style="text-align: center;">© Apraxia 2024. Todos os direitos reservados.</p>
+
+    <p style="text-align: center; color: white;">© Apraxia 2024. Todos os direitos reservados.</p>
 
     <script>
         function clickMenu() {
-         var itens = document.querySelector('.itens');
-         if (itens.style.display == 'block') {
-             itens.style.display = 'none';
-         } else {
-             itens.style.display = 'block';
-         }
-     }
-     
-     
-     
-     
-     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+            var itens = document.querySelector('.itens');
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none';
+            } else {
+                itens.style.display = 'block';
+            }
+        }
+
+
+
+
+    </script>
 </body>
 
 </html>
