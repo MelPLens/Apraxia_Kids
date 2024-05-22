@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jogos para Crianças com Apraxia</title>
+  </head>
+  <style>
+    *{
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      background: linear-gradient(315deg, #9054F0 3%, #a08bbd 38%, #aa62a0 68%, #693daf 98%);
+      animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+    color: white;
+    }
+
+    option{
+      background-color: #9054F0;
+      margin-top: -5px;
+    }
+
+    select{
+      border-radius: 50px solid white;
+    }
+  </style>
+  <body>
+    <h1>Jogos para Crianças com Apraxia</h1>
+    <div id="games-container">
+      <h2>Jogo 1: Desenvolvimento de Habilidades Motoras</h2>
+      <p>Desenvolva as habilidades motoras da criança com exercícios divertidos e interativos.</p>
+      <h2>Jogo 2: Reconhecimento de Formas e Cores</h2>
+      <p>Aprenda a reconhecer formas e cores com um jogo de memória divertido.</p>
+      <h2>Jogo 3: Desenvolvimento de Habilidades Sociais</h2>
+      <p>Desenvolva as habilidades sociais da criança com jogos de interação e comunicação.</p>
+    </div>
+    <div id="filters-container">
+      <h2>Filtros</h2>
+      <label for="theme-filter">Tema:</label>
+      <select id="theme-filter">
+        <option value="disney">Disney</option>
+        <option value="pixar">Pixar</option>
+        <option value="marvel">Marvel</option>
+        <option value="animais">Animais</option>
+        <option value="dinossauros">Dinossauros</option>
+        <option value="fazenda">Fazenda</option>
+        <option value="patrulha-canina">Patrulha Canina</option>
+        <option value="peppa-pig">Peppa Pig</option>
+        <option value="boi-da-cara-preta">Boi da Cara Preta</option>
+      </select>
+    </div>
+    <button id="start-game-button">Iniciar Jogo</button>
+
+    <script>
+      // Inicialize o filtro com um valor padrão
+      const filter = {
+        theme: 'disney'
+      };
+
+      // Atualize o filtro quando o usuário selecionar um tema
+      document.getElementById('theme-filter').addEventListener('change', (event) => {
+        filter.theme = event.target.value;
+      });
+
+      // Inicie o jogo quando o usuário clicar no botão "Iniciar Jogo"
+      document.getElementById('start-game-button').addEventListener('click', () => {
+        // Redirecione o usuário para a tela do jogo selecionado, passando o filtro como parâmetro
+        const gameUrl = `jogo.html?theme=${filter.theme}`;
+        window.location.href = gameUrl;
+      });
+    </script>
+  </body>
+</html>

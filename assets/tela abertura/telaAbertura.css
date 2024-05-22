@@ -102,6 +102,7 @@ body {
     letter-spacing: 2px;
     font-size: 80px;
     /* Ajuste o valor conforme necessário */
+    margin-top: 50px;
 
 
 }
@@ -117,7 +118,7 @@ body {
     margin: 0 auto;
     cursor: pointer; /* Exibe o cursor como mão quando passa sobre a imagem */
     transition: transform 200ms ease; /* Adiciona uma transição suave ao efeito hover */
-    
+    margin-top: 10px;
 }
   
   .play-button:hover {
