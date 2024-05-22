@@ -4,7 +4,7 @@
 Em Andamento
 
 ## Descrição do Projeto
-Para crianças com apraxia da fala, que necessitam de uma abordagem inovadora para desenvolver habilidades de comunicação, o APP Kids oferece uma solução envolvente e lúdica. Ao contrário de aplicativos que pode ser limitado, nosso produto se destaca pela colaboração com especialistas e terapeutas, garantindo uma experiência terapêutica eficaz e personalizada.
+Para crianças com apraxia da fala, que necessitam de uma abordagem inovadora para desenvolver habilidades de comunicação, o site Apraxia Kids oferece uma solução envolvente e lúdica. Ao contrário de outros métodos que podem ser limitados, nosso produto se destaca pela colaboração com especialistas e terapeutas, garantindo uma experiência terapêutica eficaz e personalizada.
 
 ## Funcionalidades Principais
 
@@ -16,9 +16,9 @@ Para crianças com apraxia da fala, que necessitam de uma abordagem inovadora pa
 
 ## Instruções de Uso
 
-### Instalação e Configuração
-- Faça o download do aplicativo na loja de aplicativos correspondente ao seu dispositivo.
-- Siga as instruções de instalação e configure o perfil da criança com base em suas necessidades e preferências.
+### Acesso ao site
+- Acesse o site Apraxia Kids em www.apraxiakids.com.
+- Clique no jogo , clique nos jogos indicados pela fono ou exercicio essencial para a a criança.
 
 ### Personalização das Atividades
 - Explore as diferentes atividades disponíveis e selecione aquelas mais adequadas ao nível de desenvolvimento e interesse da criança.
@@ -30,5 +30,4 @@ Aceitamos contribuições de especialistas, terapeutas e desenvolvedores interes
 
 ## Contato
 Para mais informações ou suporte, entre em contato através do e-mail ( apraxiakids@outlook.com)
-Estamos aqui para ajudar e responder a todas as suas perguntas relacionadas ao APP Kids.
 
