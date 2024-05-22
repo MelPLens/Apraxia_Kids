@@ -1,72 +1,142 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Jogos para Crianças com Apraxia</title>
-  </head>
-  <style>
-    *{
-      font-family: Arial, Helvetica, sans-serif;
-      text-align: center;
-      background: linear-gradient(315deg, #9054F0 3%, #a08bbd 38%, #aa62a0 68%, #693daf 98%);
-      animation: gradient 15s ease infinite;
-    background-size: 400% 400%;
-    background-attachment: fixed;
-    color: white;
-    }
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aventura na Apraxia: Jogos Divertidos para Crianças</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- favicon da pagina -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+</head>
+<style>
+body {
+  font-family: Arial Rounded MT Bold, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 20px;
+}
 
-    option{
-      background-color: #9054F0;
-      margin-top: -5px;
-    }
+header {
+  background-color: #9054F0;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
 
-    select{
-      border-radius: 50px solid white;
-    }
-  </style>
-  <body>
-    <h1>Jogos para Crianças com Apraxia</h1>
-    <div id="games-container">
-      <h2>Jogo 1: Desenvolvimento de Habilidades Motoras</h2>
-      <p>Desenvolva as habilidades motoras da criança com exercícios divertidos e interativos.</p>
-      <h2>Jogo 2: Reconhecimento de Formas e Cores</h2>
-      <p>Aprenda a reconhecer formas e cores com um jogo de memória divertido.</p>
-      <h2>Jogo 3: Desenvolvimento de Habilidades Sociais</h2>
-      <p>Desenvolva as habilidades sociais da criança com jogos de interação e comunicação.</p>
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+  max-height: 300px;
+  margin-bottom: 20px;
+}
+
+#games-container {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#games-container h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+#games-container p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+#games-container .game-card {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#games-container .game-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+#games-container .game-card h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+#games-container .game-card p {
+  font-size: 12px;
+  color: #666;
+}
+
+#filters-container {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#filters-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#filters-container select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#start-game-button {
+  background-color: #9054F0;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+#start-game-button:hover {
+  background-color: #9054F0;
+}
+</style>
+<body>
+  <header>
+    <div class="container">
+      <h1>Aventura na Apraxia</h1>
+      <p>Aprendendo com Brincadeiras: Jogos para Apraxia Infantil</p>
     </div>
-    <div id="filters-container">
-      <h2>Filtros</h2>
-      <label for="theme-filter">Tema:</label>
-      <select id="theme-filter">
-        <option value="disney">Disney</option>
-        <option value="pixar">Pixar</option>
-        <option value="marvel">Marvel</option>
-        <option value="animais">Animais</option>
-        <option value="dinossauros">Dinossauros</option>
-        <option value="fazenda">Fazenda</option>
-        <option value="patrulha-canina">Patrulha Canina</option>
-        <option value="peppa-pig">Peppa Pig</option>
-        <option value="boi-da-cara-preta">Boi da Cara Preta</option>
-      </select>
-    </div>
-    <button id="start-game-button">Iniciar Jogo</button>
-
-    <script>
-      // Inicialize o filtro com um valor padrão
-      const filter = {
-        theme: 'disney'
-      };
-
-      // Atualize o filtro quando o usuário selecionar um tema
-      document.getElementById('theme-filter').addEventListener('change', (event) => {
-        filter.theme = event.target.value;
-      });
-
-      // Inicie o jogo quando o usuário clicar no botão "Iniciar Jogo"
-      document.getElementById('start-game-button').addEventListener('click', () => {
-        // Redirecione o usuário para a tela do jogo selecionado, passando o filtro como parâmetro
-        const gameUrl = `jogo.html?theme=${filter.theme}`;
-        window.location.href = gameUrl;
-      });
-    </script>
-  </body>
-</html>
+  </header>
+  <section id="games-container">
+    <h2>Desenvolvimento de Habilidades Motoras</h2>
+    <div class="game-card">
+      <img src="./img/MascoteApraxia.png" alt="Jogo 1: Desenvolvimento de Habilidades Motoras">
+      <h3>Desenvolvimento de Habilidades Motoras</h3> </div>
+      
+        <h2>Letras de forma musical</h2>
+        <div class="game-card">
+          <img src="./img/MascoteApraxia.png" alt="Jogo 1: Desenvolvimento de Habilidades Motoras">
+          <h3>Desenvolvimento da pronuncia</h3> </div>
+          <h2>Vogais</h2>
+        <div class="game-card">
+          <img src="./img/MascoteApraxia.png" alt="Jogo 1: Desenvolvimento de Habilidades Motoras">
+          <h3>Desenvolvimento da pronuncia</h3> </div>

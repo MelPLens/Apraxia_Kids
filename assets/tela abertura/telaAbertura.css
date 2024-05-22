@@ -19,6 +19,11 @@ body {
     background-attachment: fixed;
 }
 
+.sobre_nos{
+    display: grid;
+    border-radius: 15px solid;
+    padding: 15px;
+}
 @keyframes gradient {
     0% {
         background-position: 0% 0%;
